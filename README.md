@@ -27,3 +27,6 @@ remove list
 # Remote Profile for Default User
 Get-AppxProvisionedPackage -online
 UPdate Registry Path: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Applications
+
+# GPO Turn off Microsoft consumer experiences
+Computer Configuration \ Administrative Templates \ Windows Components \ Cloud Content \ Turn off Microsoft consumer experiences

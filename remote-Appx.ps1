@@ -25,7 +25,7 @@ $AppsList = "*3dbuilder*",  # 3D Builder
       "*xboxapp*" # Xbox APP
 
 ForEach ($App in $AppsList){
-  $Packages = Get-AppxPackage -allusers | Where-Object {$_.Name -eq $App}
+  $Packages = Get-AppxPackage -allusers | Where-Object {$_.Name -like $App}
   if ($Packages -ne $null){
     "Removing Appx Package: $App"
     foreach ($Package in $Packages) { Remove-AppxPackage -package $Package.PackageFullName }
